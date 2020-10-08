@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tasks LoftSchool</title>
+  </head>
+  <body>
+    <h1>Filter Object</h1>
+    <script>
+      const workers = [
+        { name: "John", salary: 500 },
+        { name: "Jill", salary: 800 },
+        { name: "Mike", salary: 1600 },
+        { name: "Sam", salary: 1800 },
+      ];
+
+      let getWorthyWorkers = (workersArr) => {
+        const wellPaidWorkers = [];
+
+        workersArr.forEach((singleWorker) => {
+          if (singleWorker.salary > 1000) {
+            wellPaidWorkers.push(singleWorker.name);
+          }
+        });
+
+        return wellPaidWorkers;
+      };
+
+      console.log(getWorthyWorkers(workers));
+    </script>
+  </body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS Tasks LoftSchool</title>
+  </head>
+  <body>
+    <h1>String Analysis</h1>
+    <script>
+      const path = "/users/download/index.html";
+
+      let isHtml = (path) => {
+        let isHtmlCopy = ".html";
+
+        let htmlEnd = path.slice(-5);
+        return isHtmlCopy == htmlEnd;
+      };
+
+      console.log(isHtml(path));
+    </script>
+  </body>
+</html>
